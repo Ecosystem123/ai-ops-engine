@@ -1,0 +1,1 @@
+{"time":"2026-07-24 14:11:12,560","level":"INFO","message":"The porgram started. Working fine"}

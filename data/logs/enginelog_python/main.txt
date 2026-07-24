@@ -1,0 +1,3 @@
+{"time":"2026-07-24 14:29:45,620","level":"INFO","message":"The porgram started. Working fine"}
+{"time":"2026-07-24 14:30:05,341","level":"INFO","message":"The porgram started. Working fine"}
+{"time":"2026-07-24 14:30:51,835","level":"ERROR","message":"Something wrong"}

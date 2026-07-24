@@ -1,0 +1,6 @@
+[2026-07-24 11:59:02.650] [logger] [info] Program started
+[2026-07-24 11:59:02.650] [logger] [info] Working fine
+[2026-07-24 12:01:47.235] [logger] [info] Program started
+[2026-07-24 12:01:47.235] [logger] [info] Working fine
+[2026-07-24 12:06:07.406] [logger] [info] Program started
+[2026-07-24 12:06:07.406] [logger] [info] Working fine

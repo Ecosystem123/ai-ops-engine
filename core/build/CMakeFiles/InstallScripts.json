@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/abhinandps/ai-ops-engine/core/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

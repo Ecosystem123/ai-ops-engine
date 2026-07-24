@@ -1,0 +1,23 @@
+{
+    spdlog = {
+        libfiles = {
+            "/usr/lib64/libspdlog.so",
+            "/usr/lib64/libfmt.so"
+        },
+        shflags = "-pthread",
+        __enabled = true,
+        version = "1.15.3",
+        ldflags = "-pthread",
+        defines = {
+            "SPDLOG_SHARED_LIB",
+            "SPDLOG_COMPILED_LIB",
+            "SPDLOG_FMT_EXTERNAL"
+        },
+        shared = true,
+        __requirestr = "spdlog",
+        links = {
+            "spdlog",
+            "fmt"
+        }
+    }
+}
