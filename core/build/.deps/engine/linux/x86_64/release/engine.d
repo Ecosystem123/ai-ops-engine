@@ -9,9 +9,25 @@
         "/usr/bin/g++",
         {
             "-m64",
+            "-L/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/lib",
+            "-L/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/lib",
+            "-L/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib",
+            "-L/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib",
             "-s",
             "-lspdlog",
             "-lfmt",
+            "-lcpr",
+            "-lcurl",
+            "-lssl",
+            "-lcrypto",
+            "-lboost_json",
+            "-lboost_filesystem",
+            "-lboost_date_time",
+            "-lboost_container",
+            "-lboost_atomic",
+            "-ljsoncpp",
+            "-lpthread",
+            "-ldl",
             "-pthread"
         }
     }

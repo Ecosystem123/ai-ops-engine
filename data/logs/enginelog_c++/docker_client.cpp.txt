@@ -1,0 +1,29 @@
+[2026-07-24 23:26:01.235] [logger] [info] program started
+[2026-07-24 23:26:01.236] [logger] [info] Response recived from unix port
+[2026-07-24 23:26:16.231] [logger] [info] program started
+[2026-07-24 23:26:16.231] [logger] [info] Response recived from unix port
+[2026-07-24 23:26:40.652] [logger] [info] program started
+[2026-07-24 23:26:40.652] [logger] [info] Response recived from unix port
+[2026-07-24 23:28:23.065] [logger] [info] program started
+[2026-07-24 23:28:23.077] [logger] [info] Response recived from unix port
+[2026-07-24 23:31:54.541] [logger] [info] program started
+[2026-07-24 23:31:54.560] [logger] [info] Response recived from unix port
+[2026-07-24 23:40:53.018] [logger] [info] program started
+[2026-07-24 23:40:53.030] [logger] [info] Response recived from unix port
+[2026-07-24 23:41:42.008] [logger] [info] program started
+[2026-07-24 23:41:42.019] [logger] [info] Response recived from unix port
+[2026-07-25 00:22:49.708] [logger] [info] program started
+[2026-07-25 00:22:49.720] [logger] [info] Response recived from unix port
+[2026-07-25 00:23:08.514] [logger] [info] program started
+[2026-07-25 00:23:08.523] [logger] [info] Response recived from unix port
+[2026-07-25 00:35:38.291] [logger] [info] program started
+[2026-07-25 00:35:38.300] [logger] [info] Response recived from unix port
+[2026-07-25 00:42:31.027] [logger] [info] program started
+[2026-07-25 00:42:31.038] [logger] [info] Response recived from unix port
+[2026-07-25 01:01:25.408] [logger] [info] program started
+[2026-07-25 01:01:25.437] [logger] [info] Response recived from unix port
+[2026-07-25 01:01:25.437] [logger] [error] Type is not convertible to string
+[2026-07-25 01:05:29.584] [logger] [info] program started
+[2026-07-25 01:05:29.593] [logger] [info] Response recived from unix port
+[2026-07-25 01:08:01.858] [logger] [info] program started
+[2026-07-25 01:08:01.874] [logger] [info] Response recived from unix port

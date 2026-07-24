@@ -1,23 +1,117 @@
 {
+    jsoncpp = {
+        static = true,
+        sysincludedirs = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/include",
+        license = "MIT",
+        installdir = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8",
+        envs = {
+            PATH = {
+                "/home/abhinandps/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
+                "/home/abhinandps/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
+            }
+        },
+        linkdirs = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib",
+        links = "jsoncpp",
+        version = "1.9.8",
+        __requirestr = "jsoncpp",
+        libfiles = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib/libjsoncpp.a",
+        __enabled = true
+    },
+    cpr = {
+        static = true,
+        sysincludedirs = {
+            "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/include",
+            "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/include"
+        },
+        license = "MIT",
+        installdir = "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48",
+        libfiles = {
+            "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/lib/libcpr.a",
+            "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/lib/libcurl.a",
+            "/usr/lib64/libssl.so",
+            "/usr/lib64/libcrypto.so"
+        },
+        envs = {
+            PATH = {
+                "/home/abhinandps/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
+                "/home/abhinandps/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin",
+                "/home/abhinandps/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/bin"
+            }
+        },
+        linkdirs = {
+            "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/lib",
+            "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/lib"
+        },
+        links = {
+            "cpr",
+            "curl",
+            "ssl",
+            "crypto"
+        },
+        version = "1.14.2",
+        __requirestr = "cpr",
+        syslinks = "pthread",
+        __enabled = true
+    },
+    boost = {
+        __requireconfs = {
+            configs = {
+                asio = true,
+                json = true
+            }
+        },
+        sysincludedirs = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include",
+        license = "BSL-1.0",
+        installdir = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31",
+        libfiles = {
+            "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_json.a",
+            "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_filesystem.a",
+            "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_date_time.a",
+            "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_container.a",
+            "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_atomic.a"
+        },
+        static = true,
+        envs = {
+            PATH = {
+                "/home/abhinandps/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
+                "/home/abhinandps/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
+            }
+        },
+        linkdirs = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib",
+        __requirestr = "boost",
+        syslinks = {
+            "pthread",
+            "dl"
+        },
+        version = "1.90.0",
+        links = {
+            "boost_json",
+            "boost_filesystem",
+            "boost_date_time",
+            "boost_container",
+            "boost_atomic"
+        },
+        __enabled = true
+    },
     spdlog = {
-        __enabled = true,
-        shared = true,
         links = {
             "spdlog",
             "fmt"
         },
-        __requirestr = "spdlog",
-        version = "1.15.3",
+        shared = true,
         ldflags = "-pthread",
-        libfiles = {
-            "/usr/lib64/libspdlog.so",
-            "/usr/lib64/libfmt.so"
-        },
+        shflags = "-pthread",
         defines = {
             "SPDLOG_SHARED_LIB",
             "SPDLOG_COMPILED_LIB",
             "SPDLOG_FMT_EXTERNAL"
         },
-        shflags = "-pthread"
+        libfiles = {
+            "/usr/lib64/libspdlog.so",
+            "/usr/lib64/libfmt.so"
+        },
+        version = "1.15.3",
+        __requirestr = "spdlog",
+        __enabled = true
     }
 }

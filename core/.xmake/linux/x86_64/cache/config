@@ -4,6 +4,6 @@
     },
     recheck = false,
     mtimes = {
-        ["xmake.lua"] = 1784875639
+        ["xmake.lua"] = 1784918938
     }
 }
