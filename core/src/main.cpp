@@ -6,14 +6,29 @@ using namespace std;
 void logHandle();
 void getStatus();
 void inspectContainer(string containerId);
+void startContainer(string containerId);
+void stopContainer(string containerId);
 int main(){
 	try{
 		logHandle();
-		getStatus();
+		//getStatus();
+		//inspectContainer(d);
+		cout<<"Enter the operation(startcontainer or stopcontainer)";
+		string f1;
+		cin>>f1;
 		cout<<"Enter the id for docker: ";
 		string d;
 		cin>>d;
-		inspectContainer(d);
+		if(f1 == "STARTCONTAINER" || f1 == "startcontainer"){
+		   startContainer(d); 
+		}
+		else if(f1 == "STOPCONTAINER" || f1 == "stopcontainer"){
+		  stopContainer(d);
+		}
+		else{
+			cout<<"Invalid command";
+		}
+		
 	}
 	catch(const std::exception& e){
 	    string  p = __FILE__;

@@ -1,9 +1,5 @@
 {
-    files = {
-        "src/main.cpp"
-    },
-    depfiles = "main.o: src/main.cpp src/../../data/logs/enginelog_c++/commonlog.hpp\
-",
+    depfiles_format = "gcc",
     values = {
         "/usr/bin/g++",
         {
@@ -26,5 +22,9 @@
             "-DNDEBUG"
         }
     },
-    depfiles_format = "gcc"
+    depfiles = "main.o: src/main.cpp src/../../data/logs/enginelog_c++/commonlog.hpp\
+",
+    files = {
+        "src/main.cpp"
+    }
 }

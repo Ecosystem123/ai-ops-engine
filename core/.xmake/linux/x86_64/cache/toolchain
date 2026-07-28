@@ -1,132 +1,132 @@
 {
-    nim_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
-        __checked = false,
-        arch = "x86_64"
-    },
-    envs_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
+    swift_arch_x86_64_plat_linux = {
         __checked = true,
-        arch = "x86_64"
-    },
-    tool_platform_linux_x86_64_cc = {
-        toolname = "gcc",
-        program = "/usr/bin/gcc",
-        toolchain_info = {
-            plat = "linux",
-            name = "gcc",
-            cachekey = "gcc_arch_x86_64_plat_linux",
-            arch = "x86_64"
-        }
-    },
-    nasm_arch_x86_64_plat_linux = {
-        plat = "linux",
+        arch = "x86_64",
         __global = true,
-        __checked = true,
-        arch = "x86_64"
+        plat = "linux"
     },
-    fpc_arch_x86_64_plat_linux = {
-        plat = "linux",
+    zig_arch_x86_64_plat_linux = {
+        arch = "x86_64",
         __global = true,
+        plat = "linux"
+    },
+    yasm_arch_x86_64_plat_linux = {
         __checked = true,
-        arch = "x86_64"
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    cuda_arch_x86_64_plat_linux = {
+        __checked = true,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    go_arch_x86_64_plat_linux = {
+        __checked = true,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
     },
     fasm_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
         __checked = true,
-        arch = "x86_64"
-    },
-    cross_arch_x86_64_plat_linux = {
+        arch = "x86_64",
         __global = true,
-        plat = "linux",
-        arch = "x86_64"
+        plat = "linux"
     },
-    tool_target_engine_linux_x86_64_ld = {
-        toolname = "gxx",
-        program = "/usr/bin/g++",
+    envs_arch_x86_64_plat_linux = {
+        __checked = true,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    nasm_arch_x86_64_plat_linux = {
+        __checked = true,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    rust_arch_x86_64_plat_linux = {
+        __checked = true,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    fpc_arch_x86_64_plat_linux = {
+        __checked = true,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    tool_platform_linux_x86_64_cc = {
+        program = "/usr/bin/gcc",
+        toolname = "gcc",
         toolchain_info = {
-            plat = "linux",
             name = "gcc",
+            arch = "x86_64",
             cachekey = "gcc_arch_x86_64_plat_linux",
-            arch = "x86_64"
+            plat = "linux"
         }
     },
-    gcc_arch_x86_64_plat_linux = {
-        plat = "linux",
+    tool_target_engine_linux_x86_64_cxx = {
+        program = "/usr/bin/g++",
+        toolname = "gxx",
+        toolchain_info = {
+            name = "gcc",
+            arch = "x86_64",
+            cachekey = "gcc_arch_x86_64_plat_linux",
+            plat = "linux"
+        }
+    },
+    clang_arch_x86_64_plat_linux = {
+        arch = "x86_64",
         __global = true,
+        plat = "linux"
+    },
+    tool_target_engine_linux_x86_64_ld = {
+        program = "/usr/bin/g++",
+        toolname = "gxx",
+        toolchain_info = {
+            name = "gcc",
+            arch = "x86_64",
+            cachekey = "gcc_arch_x86_64_plat_linux",
+            plat = "linux"
+        }
+    },
+    cross_arch_x86_64_plat_linux = {
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    nim_arch_x86_64_plat_linux = {
+        __checked = false,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    tool_platform_linux_x86_64_ld = {
+        program = "/usr/bin/g++",
+        toolname = "gxx",
+        toolchain_info = {
+            name = "gcc",
+            arch = "x86_64",
+            cachekey = "gcc_arch_x86_64_plat_linux",
+            plat = "linux"
+        }
+    },
+    gfortran_arch_x86_64_plat_linux = {
+        __checked = true,
+        arch = "x86_64",
+        __global = true,
+        plat = "linux"
+    },
+    gcc_arch_x86_64_plat_linux = {
         __checked = {
             program = "/usr/bin/gcc",
             name = "gcc"
         },
-        arch = "x86_64"
-    },
-    zig_arch_x86_64_plat_linux = {
+        arch = "x86_64",
         __global = true,
-        plat = "linux",
-        arch = "x86_64"
-    },
-    clang_arch_x86_64_plat_linux = {
-        __global = true,
-        plat = "linux",
-        arch = "x86_64"
-    },
-    tool_platform_linux_x86_64_ld = {
-        toolname = "gxx",
-        program = "/usr/bin/g++",
-        toolchain_info = {
-            plat = "linux",
-            name = "gcc",
-            cachekey = "gcc_arch_x86_64_plat_linux",
-            arch = "x86_64"
-        }
-    },
-    yasm_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
-        __checked = true,
-        arch = "x86_64"
-    },
-    gfortran_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
-        __checked = true,
-        arch = "x86_64"
-    },
-    cuda_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
-        __checked = true,
-        arch = "x86_64"
-    },
-    go_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
-        __checked = true,
-        arch = "x86_64"
-    },
-    tool_target_engine_linux_x86_64_cxx = {
-        toolname = "gxx",
-        program = "/usr/bin/g++",
-        toolchain_info = {
-            plat = "linux",
-            name = "gcc",
-            cachekey = "gcc_arch_x86_64_plat_linux",
-            arch = "x86_64"
-        }
-    },
-    swift_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
-        __checked = true,
-        arch = "x86_64"
-    },
-    rust_arch_x86_64_plat_linux = {
-        plat = "linux",
-        __global = true,
-        __checked = true,
-        arch = "x86_64"
+        plat = "linux"
     }
 }

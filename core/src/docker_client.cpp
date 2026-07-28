@@ -4,6 +4,7 @@
 #include <spdlog/spdlog.h>
 #include <json/json.h>
 #include <string.h>
+#include <sstream>
 #include "../../data/logs/enginelog_c++/commonlog.hpp"
 using namespace std;
 using namespace boost::asio;
@@ -87,5 +88,86 @@ void inspectContainer(string id){
      log->error(e.what());
     }
   	
-  }
+ }
+void startContainer(string id){
+	 auto log = spdlog::get("logger");
+  log->info("startContainer fn started working fine");
+  try{
+  	io_context io;
+  	stream_protocol::socket endpoint2(io);
+  	stream_protocol::endpoint ad("/var/run/docker.sock");
+  	endpoint2.connect(ad);
+    string r = "POST /containers/"+id+"/start HTTP/1.1\r\n" "Host: localhost\r\n" "Connection: close\r\n" "\r\n";
+    write(endpoint2,buffer(r));
+  	vector<char> arr(5000);
+  	auto response = endpoint2.read_some(buffer(arr));
+  	string res(arr.begin(),arr.begin()+response);
+  	log->info("Response recived from unix port for the specific id");
+  	auto r1 = res.find('{');
+  	string res1 = res.substr(0,r1);
+  	cout<<res1;
+  	istringstream val(res1);
+  	string res2;
+  	while(val>>res2){
+  	 if(res2 == "200"){
+  	 	cout<<"status okay";
+  	 	break;
+  	 }
+  	 else if (res2 == "304") {
+  	     cout << "Container is already running\n";
+  	 }
+  	 else if(res2 == "400"){
+  	 	cout<<"status error";
+  	 }
+  	 else if(res2 == "204"){
+  	 	cout<<"container started successfully";
+  	 }
+  	 else if(res2 == "500"){
+  	 	cout<<"Internal server error";
+  	 }
+  	}
+   }
+  catch(const std::exception& e){
+     log->error(e.what());
+   }
+}
+void stopContainer(string id){
+  auto log = spdlog::get("logger");
+  log->info("stopContainer fn started working fine");
+  try{
+  	io_context io;
+  	stream_protocol::socket endpoint2(io);
+  	stream_protocol::endpoint ad("/var/run/docker.sock");
+  	endpoint2.connect(ad);
+    string r = "POST /containers/"+id+"/stop HTTP/1.1\r\n" "Host: localhost\r\n" "Connection: close\r\n" "\r\n";
+    write(endpoint2,buffer(r));
+  	vector<char> arr(5000);
+  	auto response = endpoint2.read_some(buffer(arr));
+  	string res(arr.begin(),arr.begin()+response);
+  	log->info("Response recived from unix port for the specific id");
+  	auto r1 = res.find('{');
+  	string res1 = res.substr(0,r1);
+  	cout<<res1;
+  	istringstream val(res1);
+  	string res2;
+  	while(val>>res2){
+  	 if(res2 == "200"){
+  	 	cout<<"status okay";
+  	 	break;
+  	 }
+  	 else if (res2 == "304" || res2 == "204") {
+  	     cout << "Container stopped successfully\n";
+  	 }
+  	 else if(res2 == "400"){
+  	 	cout<<"container not found";
+  	 }
+  	 else if(res2 == "500"){
+  	 	cout<<"Internal server error";
+  	 }
+  	}
+   }
+  catch(const std::exception& e){
+     log->error(e.what());
+   }
+}	
 	
