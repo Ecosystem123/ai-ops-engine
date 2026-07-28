@@ -27,3 +27,63 @@
 [2026-07-25 01:05:29.593] [logger] [info] Response recived from unix port
 [2026-07-25 01:08:01.858] [logger] [info] program started
 [2026-07-25 01:08:01.874] [logger] [info] Response recived from unix port
+[2026-07-28 20:13:05.006] [logger] [info] program started
+[2026-07-28 20:13:05.008] [logger] [info] Response recived from unix port
+[2026-07-28 20:13:08.281] [logger] [info] program started
+[2026-07-28 20:13:08.282] [logger] [info] Response recived from unix port
+[2026-07-28 20:14:02.142] [logger] [info] program started
+[2026-07-28 20:14:02.143] [logger] [info] Response recived from unix port
+[2026-07-28 20:15:19.399] [logger] [info] program started
+[2026-07-28 20:15:19.411] [logger] [info] Response recived from unix port
+[2026-07-28 21:06:30.812] [logger] [info] program started
+[2026-07-28 21:06:30.832] [logger] [info] Response recived from unix port
+[2026-07-28 21:06:40.257] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:06:40.258] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:06:40.258] [logger] [error] basic_string::substr: __pos (which is 18446744073709551615) > this->size() (which is 103)
+[2026-07-28 21:07:30.610] [logger] [info] program started
+[2026-07-28 21:07:30.622] [logger] [info] Response recived from unix port
+[2026-07-28 21:07:33.884] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:07:33.885] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:07:33.885] [logger] [error] basic_string::substr: __pos (which is 18446744073709551615) > this->size() (which is 103)
+[2026-07-28 21:07:36.169] [logger] [info] program started
+[2026-07-28 21:07:36.181] [logger] [info] Response recived from unix port
+[2026-07-28 21:07:39.927] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:07:39.928] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:07:39.928] [logger] [error] basic_string::substr: __pos (which is 18446744073709551615) > this->size() (which is 103)
+[2026-07-28 21:08:39.837] [logger] [info] program started
+[2026-07-28 21:08:39.849] [logger] [info] Response recived from unix port
+[2026-07-28 21:08:41.782] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:08:41.783] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:08:41.783] [logger] [error] basic_string::substr: __pos (which is 18446744073709551615) > this->size() (which is 103)
+[2026-07-28 21:11:10.249] [logger] [info] program started
+[2026-07-28 21:11:10.268] [logger] [info] Response recived from unix port
+[2026-07-28 21:11:20.968] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:11:20.970] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:11:20.971] [logger] [error] in Json::Value::getMemberNames(), value must be objectValue
+[2026-07-28 21:13:56.799] [logger] [info] program started
+[2026-07-28 21:13:56.811] [logger] [info] Response recived from unix port
+[2026-07-28 21:14:08.904] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:14:08.906] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:14:08.907] [logger] [error] in Json::Value::getMemberNames(), value must be objectValue
+[2026-07-28 21:26:14.526] [logger] [info] program started
+[2026-07-28 21:26:14.549] [logger] [info] Response recived from unix port
+[2026-07-28 21:26:32.444] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:26:32.446] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:27:29.838] [logger] [info] program started
+[2026-07-28 21:27:29.856] [logger] [info] Response recived from unix port
+[2026-07-28 21:27:32.268] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:27:32.270] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:28:57.585] [logger] [info] program started
+[2026-07-28 21:28:57.602] [logger] [info] Response recived from unix port
+[2026-07-28 21:29:11.678] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:29:11.680] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:29:11.681] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-07-28 21:35:22.749] [logger] [info] program started
+[2026-07-28 21:35:22.761] [logger] [info] Response recived from unix port
+[2026-07-28 21:35:43.484] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:35:43.486] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:38:14.762] [logger] [info] program started
+[2026-07-28 21:38:14.778] [logger] [info] Response recived from unix port
+[2026-07-28 21:38:44.709] [logger] [info] inspector_container fn started working fine
+[2026-07-28 21:38:44.711] [logger] [info] Response recived from unix port for the specific id
+[2026-07-28 21:38:44.712] [logger] [info] parsing done successfully

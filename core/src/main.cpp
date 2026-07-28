@@ -5,10 +5,15 @@
 using namespace std;
 void logHandle();
 void getStatus();
+void inspectContainer(string containerId);
 int main(){
 	try{
 		logHandle();
 		getStatus();
+		cout<<"Enter the id for docker: ";
+		string d;
+		cin>>d;
+		inspectContainer(d);
 	}
 	catch(const std::exception& e){
 	    string  p = __FILE__;

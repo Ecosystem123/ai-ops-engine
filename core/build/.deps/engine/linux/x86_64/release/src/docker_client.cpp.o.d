@@ -1,4 +1,9 @@
 {
+    files = {
+        "src/docker_client.cpp"
+    },
+    depfiles = "docker_client.o: src/docker_client.cpp  src/../../data/logs/enginelog_c++/commonlog.hpp\
+",
     values = {
         "/usr/bin/g++",
         {
@@ -21,10 +26,5 @@
             "-DNDEBUG"
         }
     },
-    files = {
-        "src/docker_client.cpp"
-    },
-    depfiles_format = "gcc",
-    depfiles = "docker_client.o: src/docker_client.cpp  src/../../data/logs/enginelog_c++/commonlog.hpp\
-"
+    depfiles_format = "gcc"
 }
