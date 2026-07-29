@@ -1,4 +1,5 @@
 //main.cpp
+#include <bits/stdc++.h>
 #include <iostream>
 #include <spdlog/spdlog.h>
 #include "../../data/logs/enginelog_c++/commonlog.hpp"
@@ -8,27 +9,36 @@ void getStatus();
 void inspectContainer(string containerId);
 void startContainer(string containerId);
 void stopContainer(string containerId);
+void maintainConnection();
 int main(){
+    logHandle();
+   	thread t(maintainConnection);
 	try{
-		logHandle();
-		//getStatus();
-		//inspectContainer(d);
-		cout<<"Enter the operation(startcontainer or stopcontainer)";
-		string f1;
-		cin>>f1;
-		cout<<"Enter the id for docker: ";
-		string d;
-		cin>>d;
-		if(f1 == "STARTCONTAINER" || f1 == "startcontainer"){
-		   startContainer(d); 
-		}
-		else if(f1 == "STOPCONTAINER" || f1 == "stopcontainer"){
-		  stopContainer(d);
-		}
-		else{
-			cout<<"Invalid command";
-		}
-		
+		 cout<<"Enter the id for docker: ";
+		 string d;
+		 cin>>d;
+		while(true){
+			cout<<"Enter the choice \n 1.startcontainer \n 2.stopcontainer \n 3.inspectcontainer \n 4.get status \n";
+			int ch;
+			cin>>ch;
+			switch(ch){
+				case 1:
+				  startContainer(d);
+				  break;
+				case 2:
+				  stopContainer(d);
+				  break;
+				case 3:
+				  inspectContainer(d);
+				  break;
+				case 4:
+				  getStatus();
+				   	break;
+				default:
+				  cout<<"invalid choice";
+				  break;		
+		}	
+	}
 	}
 	catch(const std::exception& e){
 	    string  p = __FILE__;
@@ -37,6 +47,6 @@ int main(){
 	    auto log = spdlog::get("logger");
 		log->error(e.what());
 	}
-	spdlog::shutdown();
+	t.join();
 	return 0;
 }

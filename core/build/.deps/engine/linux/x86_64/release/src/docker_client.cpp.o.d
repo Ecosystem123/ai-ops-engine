@@ -1,7 +1,4 @@
 {
-    depfiles_format = "gcc",
-    depfiles = "docker_client.o: src/docker_client.cpp  src/../../data/logs/enginelog_c++/commonlog.hpp\
-",
     files = {
         "src/docker_client.cpp"
     },
@@ -26,5 +23,8 @@
             "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/include",
             "-DNDEBUG"
         }
-    }
+    },
+    depfiles_format = "gcc",
+    depfiles = "docker_client.o: src/docker_client.cpp src/globalvar.h  src/../../data/logs/enginelog_c++/commonlog.hpp\
+"
 }

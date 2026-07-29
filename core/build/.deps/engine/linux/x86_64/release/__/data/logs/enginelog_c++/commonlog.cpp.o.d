@@ -1,10 +1,7 @@
 {
-    depfiles = "commonlog.o: ../data/logs/enginelog_c++/commonlog.cpp\
-",
     files = {
         "../data/logs/enginelog_c++/commonlog.cpp"
     },
-    depfiles_format = "gcc",
     values = {
         "/usr/bin/g++",
         {
@@ -26,5 +23,8 @@
             "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/include",
             "-DNDEBUG"
         }
-    }
+    },
+    depfiles_format = "gcc",
+    depfiles = "commonlog.o: ../data/logs/enginelog_c++/commonlog.cpp\
+"
 }
