@@ -1,11 +1,13 @@
 import paramiko
+import getpass
 from func_timeout import func_timeout
 import json
+passkey = getpass.getpass("Enter the password: ")
 def comm_ssh(a):
  data = {}
  obj = paramiko.SSHClient()
  obj.set_missing_host_key_policy(paramiko.AutoAddPolicy())
- obj.connect("localhost",username="abhinandps",password="Abhinandps@123",timeout=4)
+ obj.connect("localhost",username="abhinandps",password=passkey,timeout=4)
  print("connected")
  stdin,stdout,stderr = obj.exec_command(a)
  err = stderr.read().decode()
