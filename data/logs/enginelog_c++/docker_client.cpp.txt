@@ -65,3 +65,15 @@
 
 
 [2026-07-30 00:22:15.126] [logger] [info] Container event: start
+[2026-08-05 19:00:10.594] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-05 19:00:10.595] [logger] [info] Response recived from unix port 
+
+
+[2026-08-05 19:48:19.125] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-05 19:48:19.126] [logger] [info] Response recived from unix port 
+
+

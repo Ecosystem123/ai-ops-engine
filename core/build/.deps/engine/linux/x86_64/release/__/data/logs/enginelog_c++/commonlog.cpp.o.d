@@ -1,4 +1,5 @@
 {
+    depfiles_format = "gcc",
     files = {
         "../data/logs/enginelog_c++/commonlog.cpp"
     },
@@ -21,10 +22,11 @@
             "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include",
             "-isystem",
             "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/include",
+            "-isystem",
+            "/home/abhinandps/.xmake/packages/y/yaml-cpp/0.8.0/c41b70635ed74ae9a0628bd794bd504b/include",
             "-DNDEBUG"
         }
     },
-    depfiles_format = "gcc",
     depfiles = "commonlog.o: ../data/logs/enginelog_c++/commonlog.cpp\
 "
 }

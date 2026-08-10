@@ -1,11 +1,39 @@
 {
+    jsoncpp = {
+        version = "1.9.8",
+        linkdirs = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib",
+        license = "MIT",
+        __enabled = true,
+        installdir = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8",
+        sysincludedirs = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/include",
+        static = true,
+        __requirestr = "jsoncpp",
+        libfiles = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib/libjsoncpp.a",
+        envs = {
+            PATH = {
+                "/home/abhinandps/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
+                "/home/abhinandps/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
+            }
+        },
+        links = "jsoncpp"
+    },
     boost = {
+        __requireconfs = {
+            configs = {
+                asio = true,
+                json = true
+            }
+        },
+        version = "1.90.0",
+        linkdirs = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib",
         syslinks = {
             "pthread",
             "dl"
         },
-        static = true,
         license = "BSL-1.0",
+        static = true,
+        installdir = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31",
+        sysincludedirs = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include",
         libfiles = {
             "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_json.a",
             "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_filesystem.a",
@@ -13,69 +41,44 @@
             "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_container.a",
             "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib/libboost_atomic.a"
         },
-        links = {
-            "boost_json",
-            "boost_filesystem",
-            "boost_date_time",
-            "boost_container",
-            "boost_atomic"
-        },
-        installdir = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31",
+        __requirestr = "boost",
+        __enabled = true,
         envs = {
             PATH = {
                 "/home/abhinandps/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
                 "/home/abhinandps/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
             }
         },
-        __requirestr = "boost",
-        sysincludedirs = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include",
-        __enabled = true,
-        linkdirs = "/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib",
-        __requireconfs = {
-            configs = {
-                json = true,
-                asio = true
-            }
-        },
-        version = "1.90.0"
-    },
-    spdlog = {
-        version = "1.15.3",
         links = {
-            "spdlog",
-            "fmt"
-        },
-        ldflags = "-pthread",
-        shflags = "-pthread",
-        __requirestr = "spdlog",
-        __enabled = true,
-        defines = {
-            "SPDLOG_SHARED_LIB",
-            "SPDLOG_COMPILED_LIB",
-            "SPDLOG_FMT_EXTERNAL"
-        },
-        shared = true,
-        libfiles = {
-            "/usr/lib64/libspdlog.so",
-            "/usr/lib64/libfmt.so"
+            "boost_json",
+            "boost_filesystem",
+            "boost_date_time",
+            "boost_container",
+            "boost_atomic"
         }
     },
     cpr = {
+        version = "1.14.2",
+        linkdirs = {
+            "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/lib",
+            "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/lib"
+        },
         syslinks = "pthread",
-        static = true,
         license = "MIT",
+        __enabled = true,
         installdir = "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48",
+        sysincludedirs = {
+            "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/include",
+            "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/include"
+        },
+        static = true,
+        __requirestr = "cpr",
         libfiles = {
             "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/lib/libcpr.a",
             "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/lib/libcurl.a",
             "/usr/lib64/libssl.so",
             "/usr/lib64/libcrypto.so"
         },
-        sysincludedirs = {
-            "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/include",
-            "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/include"
-        },
-        __requirestr = "cpr",
         envs = {
             PATH = {
                 "/home/abhinandps/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
@@ -83,35 +86,51 @@
                 "/home/abhinandps/.xmake/packages/p/pkg-config/0.29.2/a0aba256d7674c1bbee15f0ee1534e92/bin"
             }
         },
-        __enabled = true,
-        linkdirs = {
-            "/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/lib",
-            "/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/lib"
-        },
         links = {
             "cpr",
             "curl",
             "ssl",
             "crypto"
-        },
-        version = "1.14.2"
+        }
     },
-    jsoncpp = {
-        version = "1.9.8",
-        static = true,
-        libfiles = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib/libjsoncpp.a",
-        license = "MIT",
-        linkdirs = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib",
-        __requirestr = "jsoncpp",
-        sysincludedirs = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/include",
+    spdlog = {
+        defines = {
+            "SPDLOG_SHARED_LIB",
+            "SPDLOG_COMPILED_LIB",
+            "SPDLOG_FMT_EXTERNAL"
+        },
+        version = "1.15.3",
+        ldflags = "-pthread",
+        shflags = "-pthread",
         __enabled = true,
-        installdir = "/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8",
-        links = "jsoncpp",
+        __requirestr = "spdlog",
+        shared = true,
+        libfiles = {
+            "/usr/lib64/libspdlog.so",
+            "/usr/lib64/libfmt.so"
+        },
+        links = {
+            "spdlog",
+            "fmt"
+        }
+    },
+    ["yaml-cpp"] = {
+        version = "0.8.0",
+        linkdirs = "/home/abhinandps/.xmake/packages/y/yaml-cpp/0.8.0/c41b70635ed74ae9a0628bd794bd504b/lib",
+        license = "MIT",
+        __enabled = true,
+        installdir = "/home/abhinandps/.xmake/packages/y/yaml-cpp/0.8.0/c41b70635ed74ae9a0628bd794bd504b",
+        sysincludedirs = "/home/abhinandps/.xmake/packages/y/yaml-cpp/0.8.0/c41b70635ed74ae9a0628bd794bd504b/include",
+        static = true,
+        __requirestr = "yaml-cpp",
+        libfiles = "/home/abhinandps/.xmake/packages/y/yaml-cpp/0.8.0/c41b70635ed74ae9a0628bd794bd504b/lib/libyaml-cpp.a",
         envs = {
             PATH = {
+                "/home/abhinandps/.xmake/packages/y/yaml-cpp/0.8.0/c41b70635ed74ae9a0628bd794bd504b/bin",
                 "/home/abhinandps/.xmake/packages/n/ninja/v1.13.2/0a9451759a4647b5923438b464085dd6/bin",
                 "/home/abhinandps/.xmake/packages/c/cmake/4.3.4/478c5cdb1d4b47ff91b42b2ceeb382a8/bin"
             }
-        }
+        },
+        links = "yaml-cpp"
     }
 }

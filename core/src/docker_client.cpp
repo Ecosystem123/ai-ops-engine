@@ -7,6 +7,7 @@
 #include <sstream>
 #include "globalvar.h"
 #include "../../data/logs/enginelog_c++/commonlog.hpp"
+#include "../../configs/config_manager.hpp"
 using namespace std;
 using namespace boost::asio;
 using namespace boost::asio::local;
@@ -22,10 +23,11 @@ void getStatus() {
 	try {
 		io_context io;
 		stream_protocol::socket client(io);
-		stream_protocol::endpoint ad("/var/run/docker.sock");
+		stream_protocol::endpoint ad(val["docker_client"]["docker_port_path"].as<std::string>());
 		client.connect(ad); // Create a Unix socket endpoint named ad 
+		auto local = val["docker_client"]["host"].as<std::string>();
 		string request = "GET /containers/json HTTP/1.1\r\n"
-		                 "Host: localhost\r\n"
+		                 "Host: local\r\n"
 		                 "Connection: close\r\n"
 		                 "\r\n";
 		write(client, buffer(request)); // buffer refers to the memory where data is stored.  
@@ -60,9 +62,10 @@ void inspectContainer(string id) {
 	try {
 		io_context io;
 		stream_protocol::socket endpoint1(io);
-		stream_protocol::endpoint ad("/var/run/docker.sock");
+		stream_protocol::endpoint ad(val["docker_client"]["docker_port_path"].as<std::string>());
 		endpoint1.connect(ad);
-		string r = "GET /containers/" + id + "/json HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n";
+		auto local = val["docker_client"]["host"].as<std::string>();
+		string r = "GET /containers/" + id + "/json HTTP/1.1\r\nHost: local\r\nConnection: close\r\n\r\n";
 		write(endpoint1, buffer(r));
 		vector<char> arr(5000);
 		auto response = endpoint1.read_some(buffer(arr));
@@ -98,9 +101,10 @@ void startContainer(string id) {
 	try {
 		io_context io;
 		stream_protocol::socket endpoint2(io);
-		stream_protocol::endpoint ad("/var/run/docker.sock");
+		stream_protocol::endpoint ad(val["docker_client"]["docker_port_path"].as<std::string>());
 		endpoint2.connect(ad);
-		string r = "POST /containers/" + id + "/start HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n";
+		auto local = val["docker_client"]["host"].as<std::string>();
+		string r = "POST /containers/" + id + "/start HTTP/1.1\r\nHost: local\r\nConnection: close\r\n\r\n";
 		write(endpoint2, buffer(r));
 		vector<char> arr(5000);
 		auto response = endpoint2.read_some(buffer(arr));
@@ -142,9 +146,10 @@ void stopContainer(string id) {
 	try {
 		io_context io;
 		stream_protocol::socket endpoint2(io);
-		stream_protocol::endpoint ad("/var/run/docker.sock");
+		stream_protocol::endpoint ad(val["docker_client"]["docker_port_path"].as<std::string>());
 		endpoint2.connect(ad);
-		string r = "POST /containers/" + id + "/stop HTTP/1.1\r\nHost: localhost\r\nConnection: close\r\n\r\n";
+		auto local = val["docker_client"]["host"].as<std::string>();
+		string r = "POST /containers/" + id + "/stop HTTP/1.1\r\nHost: local\r\nConnection: close\r\n\r\n";
 		write(endpoint2, buffer(r));
 		vector<char> arr(5000);
 		auto response = endpoint2.read_some(buffer(arr));
@@ -179,10 +184,11 @@ void stopContainer(string id) {
 void maintainConnection() {
 	auto log = spdlog::get("logger");
 	log->info("maintainConnection started working fine conenction. Connection will be open \n\n");
-	stream_protocol::endpoint ad("/var/run/docker.sock");
+	stream_protocol::endpoint ad(val["docker_client"]["docker_port_path"].as<std::string>());
 	endpoint3.connect(ad);
+	auto local = val["docker_client"]["host"].as<std::string>();
 	request = "GET /events HTTP/1.1\r\n"
-	          "Host: localhost\r\n"
+	          "Host: local\r\n"
 	          "Connection: keep-alive\r\n"
 	          "\r\n";
 	write(endpoint3, buffer(request));

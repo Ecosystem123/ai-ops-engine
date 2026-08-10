@@ -1,7 +1,4 @@
 {
-    depfiles_format = "gcc",
-    depfiles = "k8s_client.o: src/k8s_client.cpp\
-",
     values = {
         "/usr/bin/g++",
         {
@@ -26,7 +23,10 @@
             "-DNDEBUG"
         }
     },
+    depfiles_format = "gcc",
     files = {
-        "src/k8s_client.cpp"
-    }
+        "../configs/config_manager.cpp"
+    },
+    depfiles = "config_manager.o: ../configs/config_manager.cpp\
+"
 }

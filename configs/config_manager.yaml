@@ -1,0 +1,14 @@
+remote_executor:
+    ipv4: "10.199.99.241"
+    port: 22
+    username: "rohan-sivadas"
+    key_filename: "/home/abhinandps/.ssh/testing"
+remote_executor1:
+    username: "abhinandps"
+    host: "localhost"
+docker_client:
+    docker_port_path: "/var/run/docker.sock"
+    host: "localhost"
+kubernetics:
+    endpoint: "~/.kube/config"
+    host: "localhost"
