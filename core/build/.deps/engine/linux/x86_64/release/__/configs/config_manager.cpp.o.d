@@ -1,4 +1,7 @@
 {
+    files = {
+        "../configs/config_manager.cpp"
+    },
     values = {
         "/usr/bin/g++",
         {
@@ -24,9 +27,6 @@
         }
     },
     depfiles_format = "gcc",
-    files = {
-        "../configs/config_manager.cpp"
-    },
     depfiles = "config_manager.o: ../configs/config_manager.cpp\
 "
 }

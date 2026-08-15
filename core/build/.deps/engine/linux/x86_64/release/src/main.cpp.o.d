@@ -27,6 +27,6 @@
             "-DNDEBUG"
         }
     },
-    depfiles = "main.o: src/main.cpp src/../../data/logs/enginelog_c++/commonlog.hpp  src/../../configs/config_manager.hpp\
+    depfiles = "main.o: src/main.cpp src/../../data/logs/enginelog_c++/commonlog.hpp  src/../../configs/config_manager.hpp src/../files/global.hpp\
 "
 }

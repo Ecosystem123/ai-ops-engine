@@ -10,5 +10,7 @@ docker_client:
     docker_port_path: "/var/run/docker.sock"
     host: "localhost"
 kubernetics:
-    endpoint: "~/.kube/config"
+    value: "~/.kube/config"
     host: "localhost"
+    certificate: "/home/abhinandps/.minikube/profiles/minikube/client.crt"
+    private_key: "/home/abhinandps/.minikube/profiles/minikube/client.key"

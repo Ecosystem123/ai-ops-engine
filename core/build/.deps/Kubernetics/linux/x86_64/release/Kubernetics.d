@@ -1,0 +1,38 @@
+{
+    values = {
+        "/usr/bin/g++",
+        {
+            "-m64",
+            "-L/home/abhinandps/.xmake/packages/c/cpr/1.14.2/9598c17037e047d5a6fc8903c12e0a48/lib",
+            "-L/home/abhinandps/.xmake/packages/l/libcurl/8.21.0/cbe3939eb8a84e359a111967cdb1018d/lib",
+            "-L/home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/lib",
+            "-L/home/abhinandps/.xmake/packages/j/jsoncpp/1.9.8/dff818dedfa545bcbec0e8d8dc91c0e8/lib",
+            "-L/home/abhinandps/.xmake/packages/y/yaml-cpp/0.8.0/c41b70635ed74ae9a0628bd794bd504b/lib",
+            "-s",
+            "-lspdlog",
+            "-lfmt",
+            "-lcpr",
+            "-lcurl",
+            "-lssl",
+            "-lcrypto",
+            "-lboost_json",
+            "-lboost_filesystem",
+            "-lboost_date_time",
+            "-lboost_container",
+            "-lboost_atomic",
+            "-ljsoncpp",
+            "-lyaml-cpp",
+            "-lpthread",
+            "-ldl",
+            "-pthread"
+        }
+    },
+    files = {
+        "build/.objs/Kubernetics/linux/x86_64/release/kubernetics/kubernetics.cpp.o",
+        "build/.objs/Kubernetics/linux/x86_64/release/kubernetics/kubernetics_main.cpp.o",
+        "build/.objs/Kubernetics/linux/x86_64/release/__/data/logs/enginelog_c++/commonlog.cpp.o",
+        "build/.objs/Kubernetics/linux/x86_64/release/__/configs/config_manager.cpp.o",
+        "build/.objs/Kubernetics/linux/x86_64/release/files/global.cpp.o",
+        "build/.objs/Kubernetics/linux/x86_64/release/files/bridge.cpp.o"
+    }
+}

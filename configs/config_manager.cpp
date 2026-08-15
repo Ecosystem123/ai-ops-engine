@@ -9,5 +9,4 @@ void makeYaml(){
 	path config = "configs/config_manager.yaml";;
 	cout << __FILE__ << '\n';
 	val = YAML::LoadFile(config.string());
-	cout<<val;
 }

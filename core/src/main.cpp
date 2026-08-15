@@ -4,6 +4,7 @@
 #include <spdlog/spdlog.h>
 #include "../../data/logs/enginelog_c++/commonlog.hpp"
 #include "../../configs/config_manager.hpp"
+#include "../files/global.hpp"
 using namespace std;
 void logHandle();
 void getStatus();
@@ -11,34 +12,34 @@ void inspectContainer(string containerId);
 void startContainer(string containerId);
 void stopContainer(string containerId);
 void maintainConnection();
-void getPods();
 int main(){
     makeYaml();
     logHandle();
    	thread t(maintainConnection);
 	try{
-		 cout<<"Enter the id for docker: ";
+		 cout<<"\n Enter the id for docker: ";
 		 string d;
 		 cin>>d;
 		while(true){
-			cout<<"Enter the choice \n 1.startcontainer \n 2.stopcontainer \n 3.inspectcontainer \n 4.get status \n 5.get kubernetic pod details \n";
+			cout<<"\n Enter the choice \n 1.startcontainer \n 2.stopcontainer \n 3.inspectcontainer \n 4.get status \n";
 			int ch;
 			cin>>ch;
 			switch(ch){
 				case 1:
 				  startContainer(d);
+				  addFile(false);
 				  break;
 				case 2:
 				  stopContainer(d);
+				  addFile(false);
 				  break;
 				case 3:
 				  inspectContainer(d);
+				  addFile(false);
 				  break;
 				case 4:
 				  getStatus();
-				  break;
-				case 5:
-				  getPods();
+				  addFile(false);
 				  break;
 				default:
 				  cout<<"invalid choice";

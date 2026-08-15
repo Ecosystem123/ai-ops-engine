@@ -1,7 +1,5 @@
 {
     depfiles_format = "gcc",
-    depfiles = "docker_client.o: src/docker_client.cpp src/globalvar.h  src/../../data/logs/enginelog_c++/commonlog.hpp  src/../../configs/config_manager.hpp\
-",
     values = {
         "/usr/bin/g++",
         {
@@ -28,5 +26,7 @@
     },
     files = {
         "src/docker_client.cpp"
-    }
+    },
+    depfiles = "docker_client.o: src/docker_client.cpp src/globalvar.h  src/../../data/logs/enginelog_c++/commonlog.hpp  src/../../configs/config_manager.hpp\
+"
 }

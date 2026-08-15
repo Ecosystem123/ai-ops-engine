@@ -1,5 +1,4 @@
 {
-    depfiles_format = "gcc",
     files = {
         "../data/logs/enginelog_c++/commonlog.cpp"
     },
@@ -27,6 +26,7 @@
             "-DNDEBUG"
         }
     },
+    depfiles_format = "gcc",
     depfiles = "commonlog.o: ../data/logs/enginelog_c++/commonlog.cpp\
 "
 }

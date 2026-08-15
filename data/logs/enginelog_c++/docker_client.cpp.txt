@@ -77,3 +77,366 @@
 [2026-08-05 19:48:19.126] [logger] [info] Response recived from unix port 
 
 
+[2026-08-11 22:52:09.240] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 22:52:09.241] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 22:52:34.260] [logger] [info] program started
+[2026-08-11 22:52:34.261] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 22:55:43.990] [logger] [info] program started
+[2026-08-11 22:55:43.990] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 22:55:43.990] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 22:55:43.991] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 22:56:25.106] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 22:56:25.106] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 22:57:06.021] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 22:57:06.021] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 22:58:10.551] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 22:58:10.551] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 22:58:50.942] [logger] [info] program started
+[2026-08-11 22:58:50.942] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 22:58:50.942] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 22:58:50.943] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 22:59:05.385] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-11 22:59:05.387] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-11 22:59:15.494] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-11 22:59:15.495] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-11 23:16:28.242] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 23:16:28.243] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 23:16:33.897] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-11 23:16:33.898] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-11 23:17:06.333] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-11 23:17:06.334] [logger] [info] Response recived from unix port 
+
+
+[2026-08-11 23:17:09.193] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-11 23:17:09.194] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-11 23:17:09.977] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-11 23:17:09.978] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-11 23:17:10.873] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-11 23:17:10.874] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-11 23:17:10.874] [logger] [info] parsing done successfully
+
+
+[2026-08-11 23:17:11.584] [logger] [info] program started
+[2026-08-11 23:17:11.586] [logger] [info] Response recived from unix port
+[2026-08-15 18:01:34.635] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 18:01:34.637] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 18:01:40.899] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 18:01:40.900] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:01:41.713] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 18:01:41.714] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 18:50:13.363] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 18:50:13.364] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 18:53:37.873] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 18:53:37.873] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 18:53:41.978] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 18:53:41.979] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:54:05.679] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 18:54:05.679] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 18:54:09.197] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 18:54:09.199] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:54:09.830] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 18:54:09.831] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 18:54:10.412] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 18:54:10.413] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:54:10.413] [logger] [info] parsing done successfully
+
+
+[2026-08-15 18:54:11.853] [logger] [info] program started
+[2026-08-15 18:54:11.874] [logger] [info] Response recived from unix port
+[2026-08-15 18:56:02.058] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 18:56:02.059] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 18:56:04.738] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 18:56:04.740] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:56:05.306] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 18:56:05.307] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 18:56:05.835] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 18:56:05.836] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:56:05.836] [logger] [info] parsing done successfully
+
+
+[2026-08-15 18:56:07.209] [logger] [info] program started
+[2026-08-15 18:56:07.229] [logger] [info] Response recived from unix port
+[2026-08-15 21:38:17.199] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 21:38:17.201] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 21:38:21.104] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 21:38:21.105] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:38:21.528] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 21:38:21.530] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 21:38:22.340] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 21:38:22.342] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:38:22.342] [logger] [info] parsing done successfully
+
+
+[2026-08-15 21:38:23.605] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 21:38:23.606] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:38:23.607] [logger] [info] parsing done successfully
+
+
+[2026-08-15 21:39:16.535] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 21:39:16.536] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 21:39:19.558] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 21:39:19.560] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:39:20.029] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 21:39:20.030] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 21:44:57.211] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 21:44:57.212] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 21:45:02.716] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 21:45:02.718] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 21:45:03.789] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 21:45:03.791] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:45:04.427] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 21:45:04.428] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 21:45:05.739] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 21:45:05.740] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:45:05.740] [logger] [info] parsing done successfully
+
+
+[2026-08-15 21:45:58.679] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 21:45:58.680] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 21:46:02.259] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 21:46:02.261] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:46:02.971] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 21:46:02.973] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 21:46:03.786] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 21:46:03.787] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 21:46:03.787] [logger] [info] parsing done successfully
+
+
+[2026-08-15 21:46:04.538] [logger] [info] program started
+[2026-08-15 21:46:04.540] [logger] [info] Response recived from unix port
+[2026-08-15 22:40:50.957] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 22:40:50.958] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 22:40:53.514] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 22:40:53.516] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 22:40:54.010] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 22:40:54.012] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 22:40:54.589] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 22:40:54.590] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 22:40:54.590] [logger] [info] parsing done successfully
+
+
+[2026-08-15 22:40:55.354] [logger] [info] program started
+[2026-08-15 22:40:55.355] [logger] [info] Response recived from unix port
+[2026-08-15 22:55:35.761] [logger] [info] maintainConnection started working fine conenction. Connection will be open 
+
+
+[2026-08-15 22:55:35.762] [logger] [info] Response recived from unix port 
+
+
+[2026-08-15 22:55:38.746] [logger] [info] startContainer fn started working fine
+
+
+[2026-08-15 22:55:38.747] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 22:55:39.225] [logger] [info] stopContainer fn started working fine 
+
+
+[2026-08-15 22:55:39.226] [logger] [info] Response recived from unix port for the specific id 
+
+
+[2026-08-15 22:55:39.992] [logger] [info] inspector_container fn started working fine
+
+
+[2026-08-15 22:55:39.994] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 22:55:39.994] [logger] [info] parsing done successfully
+
+
+[2026-08-15 22:55:40.887] [logger] [info] program started
+[2026-08-15 22:55:40.888] [logger] [info] Response recived from unix port

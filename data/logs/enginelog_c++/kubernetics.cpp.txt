@@ -1,0 +1,307 @@
+[2026-08-11 23:25:34.879] [logger] [info] program started
+[2026-08-11 23:25:34.880] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:5 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 23:25:37.812] [logger] [info] program started
+[2026-08-11 23:25:37.812] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:5 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 23:26:33.220] [logger] [info] program started
+[2026-08-11 23:26:33.220] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:5 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 23:26:35.958] [logger] [info] program started
+[2026-08-11 23:26:35.958] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:5 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 23:26:52.549] [logger] [info] program started
+[2026-08-11 23:26:52.549] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:5 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-11 23:26:56.523] [logger] [info] program started
+[2026-08-11 23:26:56.523] [logger] [error] connect: No such file or directory [system:2 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:5 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-12 11:18:13.586] [logger] [info] program started
+[2026-08-12 11:18:13.587] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 11:18:38.694] [logger] [info] program started
+[2026-08-12 11:18:38.695] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 11:42:25.140] [logger] [info] program started
+[2026-08-12 11:42:25.150] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 11:43:59.484] [logger] [info] program started
+[2026-08-12 11:43:59.495] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 11:58:10.352] [logger] [info] program started
+[2026-08-12 11:58:10.360] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 11:58:22.138] [logger] [info] program started
+[2026-08-12 11:58:22.146] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:02:11.936] [logger] [info] program started
+[2026-08-12 12:02:11.950] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:14:25.626] [logger] [info] program started
+[2026-08-12 12:14:25.645] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:14:25.646] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:17:11.356] [logger] [info] program started
+[2026-08-12 12:17:11.371] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:17:11.372] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:18:38.887] [logger] [info] program started
+[2026-08-12 12:18:38.904] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:18:38.905] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:19:29.492] [logger] [info] program started
+[2026-08-12 12:19:29.508] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:19:29.508] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:20:06.192] [logger] [info] program started
+[2026-08-12 12:20:06.209] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:20:06.209] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:21:25.688] [logger] [info] program started
+[2026-08-12 12:21:25.705] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:21:25.705] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:23:48.860] [logger] [info] program started
+[2026-08-12 12:23:48.875] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:23:48.875] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:25:13.838] [logger] [info] program started
+[2026-08-12 12:25:13.849] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:25:13.850] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:25:26.095] [logger] [info] program started
+[2026-08-12 12:25:26.105] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:25:26.105] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:26:16.733] [logger] [info] program started
+[2026-08-12 12:26:16.751] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:26:16.752] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:30:41.614] [logger] [info] program started
+[2026-08-12 12:30:41.630] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:30:41.632] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:32:36.654] [logger] [info] program started
+[2026-08-12 12:32:36.677] [logger] [error] read: End of file [asio.misc:2]
+[2026-08-12 12:32:41.000] [logger] [info] program started
+[2026-08-12 12:32:41.012] [logger] [error] read: End of file [asio.misc:2]
+[2026-08-12 12:34:23.983] [logger] [info] program started
+[2026-08-12 12:34:23.999] [logger] [error] read: End of file [asio.misc:2]
+[2026-08-12 12:37:03.610] [logger] [info] program started
+[2026-08-12 12:37:03.626] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:37:03.627] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:49:21.790] [logger] [info] program started
+[2026-08-12 12:49:21.805] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:49:21.806] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:51:00.089] [logger] [info] program started
+[2026-08-12 12:51:00.108] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:51:00.108] [logger] [info] parsing done successfully
+
+
+[2026-08-12 12:52:44.413] [logger] [info] program started
+[2026-08-12 12:52:44.430] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 12:52:44.430] [logger] [info] parsing done successfully
+
+
+[2026-08-12 13:04:06.037] [logger] [info] program started
+[2026-08-12 13:04:06.055] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-12 13:04:06.083] [logger] [info] parsing done successfully
+
+
+[2026-08-15 15:10:19.305] [logger] [info] program started
+[2026-08-15 15:10:19.314] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:10:19.324] [logger] [info] parsing done successfully
+
+
+[2026-08-15 15:24:35.842] [logger] [info] program started
+[2026-08-15 15:24:35.851] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:24:35.853] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:27:00.817] [logger] [info] program started
+[2026-08-15 15:27:00.825] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:27:00.827] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:27:57.364] [logger] [info] program started
+[2026-08-15 15:27:57.371] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:27:57.373] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:29:14.910] [logger] [info] program started
+[2026-08-15 15:29:14.923] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:29:14.925] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:29:17.785] [logger] [info] program started
+[2026-08-15 15:29:17.794] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:29:17.795] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:29:50.560] [logger] [info] program started
+[2026-08-15 15:30:26.605] [logger] [info] program started
+[2026-08-15 15:30:26.613] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:30:26.616] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:30:29.635] [logger] [info] program started
+[2026-08-15 15:30:29.646] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:30:29.650] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:32:24.827] [logger] [info] program started
+[2026-08-15 15:32:24.842] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:32:24.845] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:34:03.300] [logger] [info] program started
+[2026-08-15 15:34:03.310] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:34:03.313] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:34:45.474] [logger] [info] program started
+[2026-08-15 15:34:45.481] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:34:45.483] [logger] [error] in Json::Value::operator[](ArrayIndex): requires arrayValue
+[2026-08-15 15:35:33.858] [logger] [info] program started
+[2026-08-15 15:35:33.869] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:35:33.879] [logger] [info] parsing done successfully
+
+
+[2026-08-15 15:35:33.879] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 15:36:25.538] [logger] [info] program started
+[2026-08-15 15:36:25.549] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:36:25.568] [logger] [info] parsing done successfully
+
+
+[2026-08-15 15:36:25.568] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 15:37:02.118] [logger] [info] program started
+[2026-08-15 15:37:02.126] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:37:02.137] [logger] [info] parsing done successfully
+
+
+[2026-08-15 15:37:02.137] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 15:37:33.478] [logger] [info] program started
+[2026-08-15 15:37:33.488] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:37:33.505] [logger] [info] parsing done successfully
+
+
+[2026-08-15 15:37:33.505] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 15:40:04.825] [logger] [info] program started
+[2026-08-15 15:40:04.833] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 15:41:13.461] [logger] [info] parsing done successfully
+
+
+[2026-08-15 15:41:13.461] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 18:01:51.753] [logger] [info] program started
+[2026-08-15 18:01:51.766] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:01:51.781] [logger] [info] parsing done successfully
+
+
+[2026-08-15 18:01:51.781] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 18:50:00.006] [logger] [info] program started
+[2026-08-15 18:50:00.015] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:50:00.031] [logger] [info] parsing done successfully
+
+
+[2026-08-15 18:50:00.031] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 18:51:43.817] [logger] [info] program started
+[2026-08-15 18:51:43.826] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:51:43.838] [logger] [info] parsing done successfully
+
+
+[2026-08-15 18:51:43.838] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 18:52:58.281] [logger] [info] program started
+[2026-08-15 18:52:58.295] [logger] [info] Response recived from unix port for the specific id
+
+
+[2026-08-15 18:52:58.314] [logger] [info] parsing done successfully
+
+
+[2026-08-15 18:52:58.314] [logger] [info] Pods details successfully extracted
+
+[2026-08-15 21:38:51.974] [logger] [info] program started
+[2026-08-15 21:38:55.029] [logger] [error] connect: No route to host [system:113 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-15 21:45:16.270] [logger] [info] program started
+[2026-08-15 21:45:19.349] [logger] [error] connect: No route to host [system:113 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-15 21:45:48.836] [logger] [info] program started
+[2026-08-15 21:45:51.925] [logger] [error] connect: No route to host [system:113 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-15 22:41:08.276] [logger] [info] program started
+[2026-08-15 22:41:11.349] [logger] [error] connect: No route to host [system:113 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
+[2026-08-15 22:55:20.881] [logger] [info] program started
+[2026-08-15 22:55:23.957] [logger] [error] connect: No route to host [system:113 at /home/abhinandps/.xmake/packages/b/boost/1.90.0/488fd73e25524085beb3971ea8741c31/include/boost/asio/detail/reactive_socket_service.hpp:587:112 in function 'boost::system::error_code boost::asio::detail::reactive_socket_service<Protocol>::connect(implementation_type&, const endpoint_type&, boost::system::error_code&)']
