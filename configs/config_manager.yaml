@@ -14,3 +14,7 @@ kubernetics:
     host: "localhost"
     certificate: "/home/abhinandps/.minikube/profiles/minikube/client.crt"
     private_key: "/home/abhinandps/.minikube/profiles/minikube/client.key"
+CloudGpu:
+    host: "ssh.lightning.ai"
+    private_key: "/home/abhinandps/.ssh/lightning_rsa"
+    Username: "s_01m1bv61ybb7c99gq7j28gppdk"
