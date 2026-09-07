@@ -14,7 +14,21 @@ kubernetics:
     host: "localhost"
     certificate: "/home/abhinandps/.minikube/profiles/minikube/client.crt"
     private_key: "/home/abhinandps/.minikube/profiles/minikube/client.key"
-CloudGpu:
+Cloud1:
     host: "ssh.lightning.ai"
     private_key: "/home/abhinandps/.ssh/lightning_rsa"
-    Username: "s_01m1bv61ybb7c99gq7j28gppdk"
+    Username: "s_01m1esfjb7ysg5h9649h58wxd4"
+Logging:
+    url: "https://logs-prod-028.grafana.net/loki/api/v1/push"
+    tags: "my-app"
+    auth: 
+     username: "1772327"
+     password: "glc_eyJvIjoiMTg5NTgwMCIsIm4iOiJsaW51eC1vdGhlci1hcm02NC10b2tlbiIsImsiOiIyYTAydzB2MzM1ajNoc051Wk81ek9KM2IiLCJtIjp7InIiOiJwcm9kLWFwLXNvdXRoLTEifX0="
+ 
+CloudGpu:
+     host: "bore.pub"
+     username: "root"
+     password: "password123"
+     port: 24289
+     key_filename: "/home/abhinandps/.ssh/colab_gpu_key_testing"
+
