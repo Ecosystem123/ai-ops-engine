@@ -98,6 +98,26 @@ A strictly day-by-day engineering roadmap. Every day has a specific goal, concep
 | 60 | Final Demonstration | Mock environment: inject a GPU OOM (watch auto-heal fix it), run the unified cost report, K8s rightsizing report, and migration advisory against a mock multi-cloud account. Record the whole thing. | **AI Infrastructure & Cloud Ops Engine v1.0** — self-healing infra + full cloud cost optimization + a sellable consulting report, all demonstrated end to end. |
 
 ---
+## extra
+| Day | Task | Details | Deliverable |
+|---|---|---|---|
+| 18 | Generic Web Service Health Checker | HTTP GET to each client site: status code, response time, SSL cert expiry. Provider-agnostic. | Basic uptime/health report for any hosted site. |
+| 19 | Secrets Manager | `secrets_manager.py` — loads/stores credentials from env vars or encrypted store. Never hardcoded, never logged. `get_credential(client_id)`. | Safe place to hold any key before you have one. |
+| 20 | Provider Selector + Key Detector (convenience only) | Client explicitly selects their provider (dropdown). Key detector runs as a **suggestion/pre-fill**, not authorization — actual provider is always confirmed by successful authentication in Day 22, never assumed from key prefix alone. | Provider is known via explicit selection + confirmed auth, not pattern-guessing. |
+| 21 | Adapter Interface + Router | `CloudProviderClient` abstract base: `ListInstances()`, `GetUsage()`, `GetCost()`. `provider_router.py` maps selected/confirmed provider → correct adapter. | One consistent entry point regardless of provider. |
+| 22 | Secure Connection + Historical Metrics Source | HTTPS + provider SDK, or SSH via `paramiko` with a restricted no-sudo user. Authentication is what confirms provider identity (not the key pattern). **Also establishes the historical data source**: provider's monitoring API (e.g. CloudWatch, DO metrics) if available, else flags that only snapshot data will be possible for this client. | Real, working, read-only, authenticated connection — with clarity on whether historical data is available. |
+| 23 | First Cloud Adapter | Implement `CloudProviderClient` for one real provider: auth, list instances, usage (pulled from provider's metrics API, not just a live snapshot), billing endpoints. | One working end-to-end provider connection with real historical usage data. |
+| 24 | SSH Fallback Adapter | Restricted SSH user, read-only commands (`top`, `df`, `free`) for current snapshot. **Explicitly flags this as snapshot-only** — no 7-day average claimed unless a lightweight local collector has been running (out of scope for MVP; report notes "single point-in-time reading" instead). | Covers non-API hosting, honestly labeled as snapshot data. |
+| 25 | Docker/K8s Detector | Probe for Docker/K8s via the Day 22 connection. Boolean result per client. | Know, per client, whether the container path applies. |
+| 26 | Container Path — Wire Existing Modules | If detected, connect your existing local Docker/K8s tools, pull their JSON. | Container-level detail folded into that client's data set. |
+| 26.5 | Fallback — VM-Only (no build needed) | If not detected, monitoring stays at VM level only. | No extra work; Day 44 runs on VM data alone. |
+| 27 | Error Handling Layer | Wrap every connection/data-pull in try/catch. On failure, log it and continue — don't crash the whole run. Missing pieces flagged in the final report. | A run that always finishes, even with partial or failing data sources. |
+| 44 | Idle/Oversized Resource Detector | Pull avg CPU/mem/network per instance — **7-day average where Day 22/23's metrics API provided history, single-snapshot reading where only SSH fallback was available** (labeled accordingly). Flag sustained low utilization. Attach real monthly cost. | `[resource, avg or snapshot utilization %, data confidence, monthly cost, flag reason]` list. |
+| 44.5 | Cost Comparison Engine | Match flagged resource specs against a static pricing table (AWS, DigitalOcean, Linode, Vultr). Surface only if saving >15-20%. Disclaimer included. | "Currently $X/month, comparable spec available for $Y/month elsewhere." |
+| 49 | Unified Cost Report Generator | Merge Day 44 + 44.5 findings, plus any Day 27 warnings, into one structured report. | Raw MVP findings, merged and ready to render. |
+| 49.5 | Report Output / Formatting | Render into a clean document with, per resource: **Resource, Current cost, Utilization (avg or snapshot), Problem detected, Evidence, Estimated waste, Recommended action, Potential saving, Confidence/data limitations.** | An actual, actionable document your friend can read and decide on. |
+| 50 | No Data Retention | After report generation, discard pulled usage/cost data. Don't persist raw client data beyond the report file. | No leftover liability from storing client infra data. |
+| 50.5 | Safe Connection Teardown | Close all open SSH/API sessions, clear credentials from memory. Run in `finally` even on failure. | No lingering sessions, no key sitting in memory. |
 
 ## Architecture Summary
 

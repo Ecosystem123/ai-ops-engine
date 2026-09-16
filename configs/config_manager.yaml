@@ -26,9 +26,9 @@ Logging:
      password: "glc_eyJvIjoiMTg5NTgwMCIsIm4iOiJsaW51eC1vdGhlci1hcm02NC10b2tlbiIsImsiOiIyYTAydzB2MzM1ajNoc051Wk81ek9KM2IiLCJtIjp7InIiOiJwcm9kLWFwLXNvdXRoLTEifX0="
  
 CloudGpu:
-     host: "bore.pub"
+     host: "ykfsl-34-182-244-62.run.pinggy-free.link"
      username: "root"
      password: "password123"
-     port: 24289
+     port: 41563
      key_filename: "/home/abhinandps/.ssh/colab_gpu_key_testing"
 

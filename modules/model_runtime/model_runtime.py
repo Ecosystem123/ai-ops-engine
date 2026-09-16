@@ -1,10 +1,11 @@
 import paramiko
 import sys
 import os
+import time
 sys.path.append("../../configs")
 from config_manager import *
 from func_timeout import func_timeout
-def run_model(a,b):
+def run_model(a):
     obj = paramiko.SSHClient()
     obj.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     obj.connect(
@@ -12,11 +13,10 @@ def run_model(a,b):
         port=val['CloudGpu']['port'],
         username=val['CloudGpu']['username'],
         key_filename=val['CloudGpu']['key_filename'],
-        timeout=10,
+        timeout=50,
         allow_agent=False,
         look_for_keys=False
-    )
-    obj.exec_command(b)
+    ) 
     stdin, stdout, stderr = obj.exec_command(a)
     output = stdout.read().decode()
     err = stderr.read().decode()
@@ -25,11 +25,13 @@ def run_model(a,b):
     else:
         print(output)
     obj.close()
-
-s ="docker run --gpus all -d -p 8000:8000 vllm/vllm-openai"
-p = "ockerd --iptables=false --bridge=none --storage-driver=vfs > /tmp/dockerd.log 2>&1 &"
-timeout = 300
+    return output
+s = "nohup bash -c 'pip install pyairports && /usr/bin/python3 -m vllm.entrypoints.openai.api_server --model TinyLlama/TinyLlama-1.1B-Chat-v1.0 --host 0.0.0.0 --port 8000' > /tmp/vllm.log 2>&1 & echo Ready"
+timeout = 180
 try:
-    print(func_timeout(timeout, run_model, args=(s,p)))
+    func_timeout(timeout, run_model, args=(s,))
 except Exception as e:
     print(e)
+time.sleep(60)
+test_cmd = '''curl --max-time 20 http://localhost:8000/v1/chat/completions -H "Content-Type: application/json" -d '{"model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0", "messages": [{"role": "user", "content": "Say hi in 3 words"}]}' '''
+print(run_model(test_cmd))
