@@ -32,3 +32,7 @@ CloudGpu:
      port: 41563
      key_filename: "/home/abhinandps/.ssh/colab_gpu_key_testing"
 
+Clienttest:
+    url: "https://amazon.com"
+    host: "amazon.com"
+
